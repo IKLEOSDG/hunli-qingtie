@@ -7,6 +7,7 @@ import Timeline from "./components/Timeline";
 import CatBlessing from "./components/CatBlessing";
 import EmojiRain from "./components/EmojiRain";
 import OpeningCover from "./components/OpeningCover";
+import CornerCats from "./components/CornerCats";
 import { invitation } from "./invitationConfig";
 
 const COVER_EXIT_MS = 900;
@@ -86,6 +87,7 @@ export default function App() {
       ) : null}
       {hasOpened ? (
         <>
+          <CornerCats cats={invitation.cornerCats} />
           <button
             type="button"
             className="music-toggle"

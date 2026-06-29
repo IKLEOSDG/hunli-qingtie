@@ -24,7 +24,7 @@ export const invitation = {
     { time: "18:00", title: "晚宴与庆祝" }
   ],
   showCountdown: false,
-  dateSummary: "中午和晚上，恭候赴约",
+  dateSummary: "良辰已定，恭候赴约",
   bgmEnabled: true,
   bgmSrc: "/audio/bgm.mp3",
   coverTitle: "开启请帖",
@@ -36,5 +36,11 @@ export const invitation = {
     "/images/cats/paw.png",
     "/images/cats/heart.png"
   ],
-  mainCatImage: "/images/cats/cat-main.png"
+  mainCatImage: "/images/cats/cat-main.png",
+  cornerCats: [
+    "/images/cats/cat-1.png",
+    "/images/cats/cat-2.png",
+    "/images/cats/cat-3.png",
+    "/images/cats/cat-main.png"
+  ]
 };
