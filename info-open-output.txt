@@ -1,0 +1,23 @@
+
+ RUN  v0.34.6 C:/Users/test1/Desktop/Code/hunli-qingtie
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/components/InfoCards.test.jsx [ src/components/InfoCards.test.jsx ]
+TypeError: test is not a function
+ ❯ src/components/InfoCards.test.jsx:7:1
+      5| import Timeline from "./Timeline";
+      6| 
+      7| test("shows a static date summary when countdown is disabled", () => {
+       | ^
+      8|   render(<DateCard invitation={invitation} />);
+      9| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  14:19:54
+   Duration  2.39s (transform 138ms, setup 235ms, collect 0ms, tests 0ms, environment 945ms, prepare 341ms)
+

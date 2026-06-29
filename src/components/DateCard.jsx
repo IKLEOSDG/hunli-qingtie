@@ -19,12 +19,16 @@ export default function DateCard({ invitation }) {
   const [countdown, setCountdown] = useState(() => getCountdownParts(targetDate));
 
   useEffect(() => {
+    if (!invitation.showCountdown) {
+      return undefined;
+    }
+
     const intervalId = window.setInterval(() => {
       setCountdown(getCountdownParts(targetDate));
     }, 60_000);
 
     return () => window.clearInterval(intervalId);
-  }, [targetDate]);
+  }, [invitation.showCountdown, targetDate]);
 
   return (
     <section className="card date-card" aria-labelledby="date-heading">
@@ -41,9 +45,11 @@ export default function DateCard({ invitation }) {
         </div>
       </div>
       <p className="countdown-text">
-        {countdown
-          ? `距离婚礼还有 ${countdown.days} 天 ${countdown.hours} 小时 ${countdown.minutes} 分钟`
-          : "幸福已开启"}
+        {invitation.showCountdown
+          ? countdown
+            ? `距离婚礼还有 ${countdown.days} 天 ${countdown.hours} 小时 ${countdown.minutes} 分钟`
+            : "幸福已开启"
+          : invitation.dateSummary}
       </p>
     </section>
   );

@@ -1,27 +1,34 @@
+const encodedAddress = encodeURIComponent("浙江省宁波市奉化区蒋葭浦老村委会");
+const encodedVenue = encodeURIComponent("汉庭宁波奉化江口酒店");
+
 export const invitation = {
-  groom: "新郎姓名",
-  bride: "新娘姓名",
-  weddingDate: "2026-10-01T11:18:00",
+  groom: "周寅",
+  bride: "钟雅馨",
+  weddingDate: "2026-10-01T16:00:00",
   displayDate: "2026年10月1日",
   weekDay: "星期四",
-  time: "11:18",
-  lunarDate: "农历八月二十",
-  venue: "XXX酒店 XXX厅",
-  address: "辽宁省沈阳市XXX区XXX路XXX号",
-  mapUrl: "",
+  time: "16:00",
+  lunarDate: "中午和晚上",
+  venue: "汉庭宁波奉化江口酒店",
+  address: "浙江省宁波市奉化区蒋葭浦老村委会",
+  mapUrl: `https://uri.amap.com/search?keyword=${encodedVenue}%20${encodedAddress}`,
   title: "我们要结婚啦",
-  subtitle: "诚邀您见证我们的幸福时刻",
-  introText:
-    "从今天起，我们决定把平凡日子过成一生的浪漫。期待您来，和我们一起分享这份喜悦。",
-  catText: "今日份幸福已被猫猫认证",
-  catBubble: "喵～记得准时来参加婚礼呀！",
-  footerText: "喜帖已送达，祝福已装满。我们在婚礼现场等你呦！",
+  subtitle: "10月1日，和我们一起把喜欢的日子过成婚礼",
+  introText: "",
+  catText: "猫猫席位已预留，等你一起来热闹。",
+  catBubble: "喵～先替我们把祝福收好，现场见！",
+  footerText: "喜帖已送达，我们在婚礼现场等你。",
   schedule: [
-    { time: "10:30", title: "宾客签到" },
-    { time: "11:18", title: "婚礼仪式" },
-    { time: "12:00", title: "婚宴开始" },
-    { time: "13:30", title: "合影留念" }
+    { time: "12:00", title: "中午场见面" },
+    { time: "16:00", title: "婚礼开始" },
+    { time: "18:00", title: "晚宴与庆祝" }
   ],
+  showCountdown: false,
+  dateSummary: "中午和晚上，恭候赴约",
+  bgmEnabled: true,
+  bgmSrc: "/audio/bgm.mp3",
+  coverTitle: "开启请帖",
+  coverSubtitle: "轻点一下，把今天的喜气翻开",
   catImages: [
     "/images/cats/cat-1.png",
     "/images/cats/cat-2.png",

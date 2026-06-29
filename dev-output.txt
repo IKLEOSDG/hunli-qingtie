@@ -1,0 +1,14 @@
+
+> wedding-invitation@0.0.0 dev
+> vite --host 127.0.0.1
+
+
+  VITE v4.5.3  ready in 352 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+14:21:41 [vite] hmr update /src/components/CoupleCard.jsx
+14:21:41 [vite] hmr update /src/App.jsx
+14:21:41 [vite] hmr update /src/components/DateCard.jsx
+14:21:41 [vite] hmr update /src/App.jsx
+14:21:41 [vite] hmr update /src/styles.css
+14:22:27 [vite] hmr update /src/App.jsx

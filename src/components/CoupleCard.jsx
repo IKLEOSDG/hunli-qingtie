@@ -16,7 +16,7 @@ export default function CoupleCard({ invitation }) {
           <strong>{invitation.bride}</strong>
         </div>
       </div>
-      <p className="supporting-text">{invitation.introText}</p>
+      {invitation.introText ? <p className="supporting-text">{invitation.introText}</p> : null}
     </section>
   );
 }

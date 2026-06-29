@@ -46,6 +46,117 @@ a {
   padding: 24px 14px 48px;
 }
 
+.opening-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  background:
+    radial-gradient(circle at top, rgba(255, 240, 230, 0.92), transparent 38%),
+    linear-gradient(180deg, rgba(255, 246, 234, 0.98), rgba(255, 251, 245, 0.98));
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.opening-cover--opening {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.opening-envelope {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.opening-envelope__flap {
+  position: absolute;
+  top: calc(50% - 176px);
+  width: min(92vw, 420px);
+  height: 138px;
+  background: linear-gradient(180deg, #fff8f2, #f9ddcf);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top center;
+  box-shadow: 0 14px 30px rgba(169, 47, 53, 0.08);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.opening-cover--opening .opening-envelope__flap {
+  transform: rotateX(176deg) translateY(-18px);
+  opacity: 0.2;
+}
+
+.opening-card {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 420px);
+  padding: 34px 26px 28px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 247, 241, 0.96));
+  border: 1px solid rgba(216, 168, 79, 0.28);
+  box-shadow: 0 24px 56px rgba(145, 87, 59, 0.16);
+  text-align: center;
+  overflow: hidden;
+}
+
+.opening-card::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px dashed rgba(216, 168, 79, 0.45);
+  border-radius: 22px;
+}
+
+.opening-card__eyebrow,
+.opening-card__subtitle,
+.opening-card__names {
+  position: relative;
+  z-index: 1;
+}
+
+.opening-card__eyebrow {
+  margin: 0 0 14px;
+  color: var(--gold);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.opening-card__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 2.15rem;
+  line-height: 1.1;
+}
+
+.opening-card__names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px 0 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.opening-card__separator {
+  color: var(--red);
+}
+
+.opening-card__subtitle {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.opening-card__button {
+  position: relative;
+  z-index: 1;
+}
+
 .invitation-page {
   position: relative;
   z-index: 1;
@@ -266,6 +377,20 @@ a {
   transform: scale(0.97);
 }
 
+.music-toggle {
+  position: fixed;
+  right: max(14px, calc((100vw - 430px) / 2 + 14px));
+  top: 18px;
+  z-index: 6;
+  min-height: 42px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 14px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--deep-red);
+  box-shadow: 0 12px 24px rgba(145, 87, 59, 0.12);
+}
+
 .timeline-list {
   list-style: none;
   padding: 0;
@@ -436,6 +561,10 @@ a {
 @media (max-width: 520px) {
   .page-shell {
     padding-inline: 12px;
+  }
+
+  .music-toggle {
+    right: 12px;
   }
 
   .cat-layout {
