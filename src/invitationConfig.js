@@ -1,5 +1,5 @@
-const encodedAddress = encodeURIComponent("浙江省宁波市奉化区蒋葭浦老村委会");
-const encodedVenue = encodeURIComponent("汉庭宁波奉化江口酒店");
+const address = "浙江省宁波市奉化区蒋葭浦老村委会";
+const encodedAddress = encodeURIComponent(address);
 
 export const invitation = {
   groom: "周寅",
@@ -9,9 +9,9 @@ export const invitation = {
   weekDay: "星期四",
   time: "16:00",
   lunarDate: "中午和晚上",
-  venue: "汉庭宁波奉化江口酒店",
-  address: "浙江省宁波市奉化区蒋葭浦老村委会",
-  mapUrl: `https://uri.amap.com/search?keyword=${encodedVenue}%20${encodedAddress}`,
+  venue: address,
+  address,
+  mapUrl: `https://uri.amap.com/search?keyword=${encodedAddress}`,
   title: "我们要结婚啦",
   subtitle: "10月1日，和我们一起把喜欢的日子过成婚礼",
   introText: "",

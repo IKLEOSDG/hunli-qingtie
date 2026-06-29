@@ -31,5 +31,5 @@ test("renders configured couple and venue details", async () => {
 
   expect(screen.getAllByText("周寅").length).toBeGreaterThan(0);
   expect(screen.getAllByText("钟雅馨").length).toBeGreaterThan(0);
-  expect(screen.getByText("汉庭宁波奉化江口酒店")).toBeInTheDocument();
+  expect(screen.getAllByText("浙江省宁波市奉化区蒋葭浦老村委会").length).toBeGreaterThan(0);
 });

@@ -1,0 +1,14 @@
+
+ RUN  v0.34.6 C:/Users/test1/Desktop/Code/hunli-qingtie
+
+ ✓ src/App.test.jsx > shows the opening cover before the invitation content
+ ✓ src/App.test.jsx > reveals invitation content after opening
+ ✓ src/App.test.jsx > renders configured couple and venue details
+ ✓ src/components/InfoCards.test.jsx > shows a static date summary when countdown is disabled
+ ✓ src/components/InfoCards.test.jsx > renders configured location buttons and timeline items
+
+ Test Files  2 passed (2)
+      Tests  5 passed (5)
+   Start at  14:33:55
+   Duration  1.92s (transform 189ms, setup 368ms, collect 417ms, tests 232ms, environment 476ms, prepare 154ms)
+
