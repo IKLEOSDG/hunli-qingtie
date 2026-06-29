@@ -13,7 +13,7 @@ export const invitation = {
   address,
   mapUrl: `https://uri.amap.com/search?keyword=${encodedAddress}`,
   title: "我们要结婚啦",
-  subtitle: "10月1日，和我们一起把喜欢的日子过成婚礼",
+  subtitle: "10月1日，和我们一起把喜欢的日子过成婚礼。",
   introText: "",
   catText: "猫猫席位已预留，等你一起来热闹。",
   catBubble: "喵～先替我们把祝福收好，现场见！",
@@ -30,20 +30,20 @@ export const invitation = {
   coverTitle: "开启请帖",
   coverSubtitle: "轻点一下，把今天的喜气翻开",
   catImages: [
-    { src: "/images/cats/real/chouchou-1.png", objectPosition: "34% 48%" },
-    { src: "/images/cats/real/chouchou-2.png", objectPosition: "52% 26%" },
-    { src: "/images/cats/real/chouchou-3.png", objectPosition: "52% 34%" },
-    { src: "/images/cats/real/xiangxiang-3.png", objectPosition: "50% 52%" },
-    { src: "/images/cats/real/xiangxiang-4.png", objectPosition: "44% 38%" }
+    { src: "/images/cats/latest/mao1-1.webp", objectPosition: "50% 52%" },
+    { src: "/images/cats/latest/mao1-2.webp", objectPosition: "50% 42%" },
+    { src: "/images/cats/latest/mao1-4.webp", objectPosition: "56% 30%" },
+    { src: "/images/cats/latest/mao2-3.webp", objectPosition: "50% 48%" },
+    { src: "/images/cats/latest/mao2-4.webp", objectPosition: "38% 48%" }
   ],
   mainCatImage: {
-    src: "/images/cats/real/chouchou-3.png",
-    objectPosition: "52% 34%"
+    src: "/images/cats/latest/mao1-2.webp",
+    objectPosition: "50% 42%"
   },
   cornerCats: [
-    { src: "/images/cats/real/chouchou-1.png", objectPosition: "34% 48%" },
-    { src: "/images/cats/real/chouchou-2.png", objectPosition: "52% 24%" },
-    { src: "/images/cats/real/xiangxiang-4.png", objectPosition: "44% 38%" },
-    { src: "/images/cats/real/xiangxiang-3.png", objectPosition: "50% 54%" }
+    { src: "/images/cats/latest/mao1-4.webp", objectPosition: "56% 30%" },
+    { src: "/images/cats/latest/mao2-1.webp", objectPosition: "50% 28%" },
+    { src: "/images/cats/latest/mao1-1.webp", objectPosition: "50% 52%" },
+    { src: "/images/cats/latest/mao2-4.webp", objectPosition: "38% 48%" }
   ]
 };
