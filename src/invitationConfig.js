@@ -30,17 +30,20 @@ export const invitation = {
   coverTitle: "开启请帖",
   coverSubtitle: "轻点一下，把今天的喜气翻开",
   catImages: [
-    "/images/cats/cat-1.png",
-    "/images/cats/cat-2.png",
-    "/images/cats/cat-3.png",
-    "/images/cats/paw.png",
-    "/images/cats/heart.png"
+    { src: "/images/cats/real/chouchou-1.png", objectPosition: "34% 48%" },
+    { src: "/images/cats/real/chouchou-2.png", objectPosition: "52% 26%" },
+    { src: "/images/cats/real/chouchou-3.png", objectPosition: "52% 34%" },
+    { src: "/images/cats/real/xiangxiang-3.png", objectPosition: "50% 52%" },
+    { src: "/images/cats/real/xiangxiang-4.png", objectPosition: "44% 38%" }
   ],
-  mainCatImage: "/images/cats/cat-main.png",
+  mainCatImage: {
+    src: "/images/cats/real/chouchou-3.png",
+    objectPosition: "52% 34%"
+  },
   cornerCats: [
-    "/images/cats/cat-1.png",
-    "/images/cats/cat-2.png",
-    "/images/cats/cat-3.png",
-    "/images/cats/cat-main.png"
+    { src: "/images/cats/real/chouchou-1.png", objectPosition: "34% 48%" },
+    { src: "/images/cats/real/chouchou-2.png", objectPosition: "52% 24%" },
+    { src: "/images/cats/real/xiangxiang-4.png", objectPosition: "44% 38%" },
+    { src: "/images/cats/real/xiangxiang-3.png", objectPosition: "50% 54%" }
   ]
 };

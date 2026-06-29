@@ -1,9 +1,26 @@
 import { useLayoutEffect, useState } from "react";
 
-const FALLBACK_EMOJIS = ["🐱", "😽", "😻", "🐾", "💖", "🎀", "❤"];
+const FALLBACK_EMOJIS = ["🐾", "😻", "😺", "🐥", "💗", "🎀", "✨"];
 
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function normalizeAsset(asset, index) {
+  if (typeof asset === "string") {
+    return {
+      id: `${Date.now()}-${index}-${Math.random().toString(36).slice(2)}`,
+      value: asset,
+      isImage: asset.startsWith("/")
+    };
+  }
+
+  return {
+    id: `${Date.now()}-${index}-${Math.random().toString(36).slice(2)}`,
+    value: asset?.src ?? FALLBACK_EMOJIS[index % FALLBACK_EMOJIS.length],
+    objectPosition: asset?.objectPosition,
+    isImage: Boolean(asset?.src)
+  };
 }
 
 function createRainItem(asset, index) {
@@ -13,18 +30,17 @@ function createRainItem(asset, index) {
   const left = Math.random() * 100;
   const rotation = randomBetween(-28, 28);
   const delay = Math.random() * 240;
-  const isImage = typeof asset === "string" && asset.startsWith("/");
+  const normalized = normalizeAsset(asset, index);
 
   return {
-    id: `${Date.now()}-${index}-${Math.random().toString(36).slice(2)}`,
-    asset: asset ?? FALLBACK_EMOJIS[index % FALLBACK_EMOJIS.length],
+    ...normalized,
+    asset: normalized.value,
     duration,
     drift,
     size,
     left,
     rotation,
-    delay,
-    isImage
+    delay
   };
 }
 
@@ -73,6 +89,7 @@ export default function EmojiRain({ triggerKey, assets }) {
             <img
               src={item.asset}
               alt=""
+              style={{ objectPosition: item.objectPosition }}
               onError={(event) => {
                 const emoji = FALLBACK_EMOJIS[randomBetween(0, FALLBACK_EMOJIS.length - 1)];
                 event.currentTarget.style.display = "none";
