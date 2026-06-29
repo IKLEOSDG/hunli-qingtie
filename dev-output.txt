@@ -13,3 +13,5 @@
 14:21:41 [vite] hmr update /src/styles.css
 14:22:27 [vite] hmr update /src/App.jsx
 14:33:10 [vite] hmr update /src/App.jsx
+14:39:13 [vite] hmr update /src/styles.css
+14:41:02 [vite] hmr update /src/styles.css
