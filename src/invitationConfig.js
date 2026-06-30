@@ -15,8 +15,8 @@ export const invitation = {
   title: "我们要结婚啦",
   subtitle: "10月1日，和我们一起把喜欢的日子过成婚礼。",
   introText: "",
-  catText: "猫猫席位已预留，等你一起来热闹。",
-  catBubble: "喵～先替我们把祝福收好，现场见！",
+  catText: "四只猫猫都到场了，等你一起来热闹。",
+  catBubble: "喵～我们先替主人把祝福收好，婚礼现场见！",
   footerText: "喜帖已送达，我们在婚礼现场等你。",
   schedule: [
     { time: "12:00", title: "中午场见面" },
@@ -30,20 +30,20 @@ export const invitation = {
   coverTitle: "开启请帖",
   coverSubtitle: "轻点一下，把今天的喜气翻开",
   catImages: [
-    { src: "/images/cats/latest/mao1-1.webp", objectPosition: "50% 52%" },
-    { src: "/images/cats/latest/mao1-2.webp", objectPosition: "50% 42%" },
-    { src: "/images/cats/latest/mao1-4.webp", objectPosition: "56% 30%" },
-    { src: "/images/cats/latest/mao2-3.webp", objectPosition: "50% 48%" },
-    { src: "/images/cats/latest/mao2-4.webp", objectPosition: "38% 48%" }
+    { src: "/images/cats/four/cat-1.webp", objectPosition: "50% 42%" },
+    { src: "/images/cats/four/cat-2.webp", objectPosition: "50% 48%" },
+    { src: "/images/cats/four/cat-3.webp", objectPosition: "50% 38%" },
+    { src: "/images/cats/four/cat-3b.webp", objectPosition: "50% 30%" },
+    { src: "/images/cats/four/cat-4.webp", objectPosition: "50% 42%" }
   ],
   mainCatImage: {
-    src: "/images/cats/latest/mao1-2.webp",
-    objectPosition: "50% 42%"
+    src: "/images/cats/four/cat-3b.webp",
+    objectPosition: "50% 30%"
   },
   cornerCats: [
-    { src: "/images/cats/latest/mao1-4.webp", objectPosition: "56% 30%" },
-    { src: "/images/cats/latest/mao2-1.webp", objectPosition: "50% 28%" },
-    { src: "/images/cats/latest/mao1-1.webp", objectPosition: "50% 52%" },
-    { src: "/images/cats/latest/mao2-4.webp", objectPosition: "38% 48%" }
+    { src: "/images/cats/four/cat-1.webp", objectPosition: "50% 42%" },
+    { src: "/images/cats/four/cat-2.webp", objectPosition: "50% 48%" },
+    { src: "/images/cats/four/cat-3.webp", objectPosition: "50% 38%" },
+    { src: "/images/cats/four/cat-4.webp", objectPosition: "50% 42%" }
   ]
 };
